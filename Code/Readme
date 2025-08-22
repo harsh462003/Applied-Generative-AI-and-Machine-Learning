@@ -1,0 +1,181 @@
+# Code Directory
+
+This directory contains all the source code, implementations, and programming assignments for the Applied Generative AI and Machine Learning course.
+
+## 📁 Directory Structure
+
+```
+code/
+├── assignments/
+│   ├── assignment_1/
+│   │   └── Applied_Generative_AI_and_Machine_Learning_Assignment.ipynb
+│   ├── assignment_2/
+│   └── assignment_3/
+├── projects/
+├── exercises/
+├── algorithms/
+│   ├── sorting/
+│   ├── searching/
+│   └── ml_algorithms/
+├── data_structures/
+└── utilities/
+```
+
+## 📚 Current Files
+
+### Assignment 1 (August 11, 2025)
+**File**: `Applied_Generative_AI_and_Machine_Learning_Assignment.ipynb`
+
+**Topics Covered**:
+- **Basic Python Operations**
+  - List manipulation and searching
+  - Finding min/max values
+  - Filtering and counting elements
+  - Sum and average calculations
+
+- **User Input & Functions**
+  - Gross pay calculation
+  - Overtime pay computation
+  - Function definitions and parameters
+
+- **Sorting Algorithms**
+  - Bubble Sort implementation
+  - Insertion Sort implementation
+  - Quick Sort implementation
+  - Comparison with Python's built-in sort
+
+- **Python Fundamentals**
+  - Data types and type checking
+  - String operations and slicing
+  - List vs Tuple differences
+  - Dictionary operations
+  - Control structures (loops, conditionals)
+
+- **Advanced Concepts**
+  - List comprehensions
+  - String formatting
+  - Date and time operations
+  - Function assignment to variables
+
+### Assignment 2 (August 19, 2025)
+**Additional Topics**:
+- **Library Management**
+  - NumPy, SciPy, Scikit-learn version checking
+  - Import statements and aliases
+
+- **Advanced Python Features**
+  - List comprehensions vs traditional loops
+  - Dictionary iteration methods
+  - Tuple unpacking
+  - String methods and operations
+
+- **NumPy Operations**
+  - Array creation and manipulation
+  - Array slicing and indexing
+  - Mathematical operations
+  - Boolean indexing
+  - Matrix operations and dot products
+  - Statistical functions (sum, mean)
+
+## 🔧 Code Examples
+
+### Quick Sort Implementation
+```python
+def quick_sort(arr):
+    if len(arr) <= 1:
+        return arr
+    pivot = arr[len(arr) // 2]
+    left = [x for x in arr if x < pivot]
+    middle = [x for x in arr if x == pivot]
+    right = [x for x in arr if x > pivot]
+    return quick_sort(left) + middle + quick_sort(right)
+```
+
+### List Comprehension Example
+```python
+# Traditional loop
+squares = []
+for x in nums:
+    squares.append(x ** 2)
+
+# List comprehension
+squares = [x**2 for x in nums]
+```
+
+### NumPy Array Operations
+```python
+import numpy as np
+x = np.array([[1,2],[3,4]])
+print(np.sum(x))         # Sum of all elements
+print(np.sum(x, axis=0)) # Sum of each column
+print(np.sum(x, axis=1)) # Sum of each row
+```
+
+## 🚀 Running the Code
+
+### Prerequisites
+```bash
+pip install numpy scipy scikit-learn jupyter matplotlib
+```
+
+### Execution
+1. **Jupyter Notebook**: Open the `.ipynb` files in Jupyter Notebook or JupyterLab
+2. **Google Colab**: Upload the files to Google Colab for cloud execution
+3. **Local Python**: Extract code cells and run in your Python environment
+
+## 📊 Assignment Progress
+
+| Assignment | File | Date | Status | Key Concepts |
+|------------|------|------|--------|--------------|
+| 1 | `Applied_Generative_AI_and_Machine_Learning_Assignment.ipynb` | Aug 11, 2025 | ✅ | Python basics, sorting algorithms |
+| 2 | Same file (updated) | Aug 19, 2025 | ✅ | Advanced Python, NumPy |
+
+## 🎯 Learning Outcomes
+
+After completing these assignments, you should be able to:
+
+1. **Python Programming**
+   - Write efficient Python code using appropriate data structures
+   - Implement common algorithms from scratch
+   - Use list comprehensions for concise code
+
+2. **Algorithm Implementation**
+   - Understand and implement various sorting algorithms
+   - Analyze time and space complexity
+   - Compare algorithm performance
+
+3. **Data Manipulation**
+   - Work with NumPy arrays effectively
+   - Perform mathematical operations on arrays
+   - Handle multi-dimensional data structures
+
+4. **Problem Solving**
+   - Break down complex problems into smaller functions
+   - Use appropriate Python libraries for specific tasks
+   - Write clean, readable, and maintainable code
+
+## 🔍 Code Quality Guidelines
+
+- **Naming Conventions**: Use descriptive variable and function names
+- **Comments**: Include explanatory comments for complex logic
+- **Documentation**: Add docstrings for functions and classes
+- **Error Handling**: Implement appropriate error checking
+- **Testing**: Test functions with various input cases
+
+## 📝 Notes
+
+- All code has been tested in Google Colab environment
+- Code includes both basic implementations and optimized versions
+- Examples demonstrate both procedural and functional programming approaches
+- NumPy operations showcase vectorized computing advantages
+
+## 🐛 Common Issues & Solutions
+
+1. **Import Errors**: Ensure all required libraries are installed
+2. **Version Compatibility**: Check Python and library versions
+3. **Array Shape Errors**: Verify NumPy array dimensions before operations
+4. **List vs Array**: Understand differences between Python lists and NumPy arrays
+
+---
+
+*This code directory is continuously updated with new assignments and projects. Check back regularly for the latest implementations!* 🚀
